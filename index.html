@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Koladele Olaitan">
+
+    <!-- ==== Google Fonts ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- ==== Personal CSS ==== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Homepage - Yetti Technologies</title>
+
+    <!-- ==== JavaScript ==== -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/newsletter.js" defer></script>
+</head>
+<body>
+    <!-- ==== desktop header ==== -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" id="logo">
+                <img src="assets/logo.png" alt="Yetti Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li class="active-page"><a href="index.html">Home</a></li>
+                    <li><a href="#pricing">Pricings</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="mailto:info@myyetti.co">Email Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn--fill">Login</a>
+                <a href="#" class="btn btn--fill">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==== mobile header ==== -->
+    <div class="mobile-header">
+        <div class="mobile-header-inner">
+            <a href="index.html" class="mobile-logo"><img src="assets/logo.png" alt="Yetti logo"></a>
+            <div class="burger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== mobile navbar ==== -->
+    <div class="mobile-navbar">
+        <div class="mobile-navbar-inner">
+            <ul class="mobile-navlinks">
+                <li class="active-page"><a href="index.html">Home</a></li>
+                <li><a href="#">Pricings</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="mailto:info@myyetti.co">Email Us</a></li>
+            </ul>
+            <a href="#" class="btn btn--fill">Sign in</a>
+            <a href="#" class="btn btn--fill">Get Started</a>
+        </div>
+    </div>
+
+    <!-- ==== hero ==== -->
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero--half">
+                <h1 class="heading--large slide--to-right">Your business, <br> Our priority.</h1>
+                <p class="hero-text slide--to-right">Get your business the recognition it deserves with marketing tools that scale.</p>
+                <a href="#" class="btn btn--fill slide--to-right">Create a store</a>
+            </div>
+            <div class="hero--half">
+                <img src="assets/hero-image.png" alt="Yetti illustration" class="bounce--up-down">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== how it works ==== -->
+    <section id="operation">
+        <div class="operation-inner">
+            <h1 class="heading--large">How it works</h1>
+            <p>Get started with Yetti with these easy steps.</p>
+            <div class="flex operation-cards">
+                <div class="operation-card_1">
+                    <div class="op-box"></div>
+                    <h2 class="op-number">Step 1</h2>
+                    <h2 class="op-name">Create an account</h2>
+                    <p class="op-desc">Create an account for your business with us in no time.</p>
+                </div>
+                <div class="operation-card_2">
+                    <div class="op-box"></div>
+                    <h2 class="op-number">Step 2</h2>
+                    <h2 class="op-name">Customize your store</h2>
+                    <p class="op-desc">Customize your store to fits your business with easy.</p>
+                </div>
+                <div class="operation-card_3">
+                    <div class="op-box"></div>
+                    <h2 class="op-number">Step 3</h2>
+                    <h2 class="op-name">Scale business</h2>
+                    <p class="op-desc">Customize your business page and start reaching out to customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== what we do ==== -->
+    <section id="activity">
+        <div class="activity-inner">
+            <div class="activity_image slide--to-right"><p>IMG</p></div>
+            <div class="activity_container slide--to-left">
+                <h2 class="heading--medium">What we do</h2>
+                <p>Yetti makes doing business easy, here is how:</p>
+                <div class="activity_outline">
+                    <div class="outline_container">
+                        <div class="circle c-1"></div>
+                        <div class="outline_desc">
+                            <h3 class="heading--small">Easy Monitoring</h3>
+                            <p>We offer a platform where you can easily monitor your ads and your customers with ease</p>
+                        </div>
+                    </div>
+                    <div class="outline_container">
+                        <div class="circle c-2"></div>
+                        <div class="outline_desc">
+                            <h3 class="heading--small">Collaborate with other businesses </h3>
+                            <p>Meet other businesses and form patnerships to meet certain goals.</p>
+                        </div>
+                    </div>
+                    <div class="outline_container">
+                        <div class="circle c-3"></div>
+                        <div class="outline_desc">
+                            <h3 class="heading--small">Connect To Your Customers</h3>
+                            <p>We help customers or potential customers get in touch with you easily after seeing your ad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== pricing ==== -->
+    <section id="pricing">
+        <div class="pricing_blob--left"></div>
+        <div class="pricing_blob--right"></div>
+        <div class="pricing-inner">
+            <h2 class="heading--large">Create your store</h2>
+            <p class="subtitle">Join the new way of publicizing your business.</p>
+            <div class="pricing-container">
+                <h3 class="pricing-plan">Free</h3>
+                <h3 class="price">&#x20A6;0<span> / month</span></h3>
+                <p class="pricing-tagline">Start selling online for free</p>
+                <a href="#" class="btn btn--outline">Choose free</a>
+                <ul class="pricing-list">
+                    <li>Free online store/subdomain </li>
+                    <li>Unlimited product/orders </li>
+                    <li>1% online transaction fee </li>
+                    <li>Business analytics</li>
+                    <li>Payment & logistics integration</li>
+                    <li>Inventory management system</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="scroll-to-top"><ion-icon name="chevron-up-outline"></ion-icon> </div>
+    <div class="newsletter-popup">
+        <p class="msg-one"></p>
+        <p class="msg-two"></p>
+        <button>Ok</button>
+    </div>
+    <div class="overlay"></div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="col-4">
+                <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Yetti logo"></a>
+                <p>Phone: <a href="tel:+2349073767709">+234 907 3767 709</a></p>
+                <p>Email: <a href="mailto:info@myyetti.co">info@myyetti.co</a></p>
+            </div>
+            <div class="col-4">
+                <h3 class="footer-heading">Resources</h3>
+                <ul>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="terms.html">Terms of service</a></li>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3 class="footer-heading">Subscribe to our newsletter</h3>
+                <form class="newsletter">
+                    <p class="newsletter--msg">Your email address is not valid!</p>
+                    <input type="email" placeholder="Your email address">
+                    <input type="submit" value="Subscribe" id="submit-n">
+                </form>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/yettiofficial_/?igshid=YmMyMTA2M2Y%3D(&__coig_restricted=1" target="_blank"><img src="assets/ig_icon.png" alt="Instagram Icon"></a>
+            <a href="https://twitter.com/YETTIOFFICIAL?t=ZP1Sn33Kyn8xeFffIxVIgw&s=08" target="_blank"><img src="assets/twitter_icon.png" alt="Twitter Icon"></a>
+            <a href="https://t.me/yetticommunity" target="_blank"><img src="assets/fb_icon.png" alt="Telegram Icon"></a>
+            </div>
+        <p class="copyright">&copy; Yetti technologies 2022. All rights reserved.</p>
+    </footer>
+
+
+    <!-- ==== Ionic Icon ==== -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- ==== GSAP ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</body>
+</html>
