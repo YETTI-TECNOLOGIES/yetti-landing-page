@@ -293,6 +293,9 @@ nav li.active-page::after {
 }
 
 @media screen and (max-width: 540px) {
+  body {
+    font-size: 18px;
+  }
   header {
     display: none;
   }
@@ -560,6 +563,10 @@ nav li.active-page::after {
   .activity_container > p,
   .activity_outline {
     width: 100%;
+  }
+
+  .activity_container {
+    padding: 32px 16px;
   }
 }
 
