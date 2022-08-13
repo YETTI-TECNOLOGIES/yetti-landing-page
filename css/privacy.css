@@ -1,105 +1,106 @@
 /* Reset */
 .heading--medium {
-    font-size: 28px;
-    margin-block: 12px;
+  font-size: 28px;
+  margin-block: 12px;
 }
 
 .heading--small {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 header {
-    position: fixed;
-    background-color: rgba(255,255,255,0.5);
-    backdrop-filter: blur(3px);
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
 }
 
 .hero--other {
-    padding: 0;
-    background-color: var(--brand-primary-2);
+  padding: 0;
+  background-color: var(--brand-primary-2);
 }
 .hero-inner {
-    height: 300px;
-    margin: 0 auto 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 300px;
+  margin: 0 auto 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 section:not(.hero--other) {
-    width: 80%;
-    margin: 0 auto 32px;
-    padding: 0;
+  width: 80%;
+  margin: 0 auto 32px;
+  padding: 0;
 }
 .privacy-nav > ul {
-    padding-left: 24px;
+  padding-left: 24px;
 }
 .privacy-nav ul li {
-    position: relative;
-    list-style-type: disc;
-    color: var(--brand-primary);
-    font-size: 20px;
+  position: relative;
+  list-style-type: disc;
+  color: var(--brand-primary);
+  font-size: 20px;
 }
 .privacy-nav ul li::marker {
-    color: var(--brand-primary-2);
-    font-size: 1.4em;
+  color: var(--brand-primary-2);
+  font-size: 1.4em;
 }
 .privacy-submenu {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 .privacy-nav a {
-    font-size: 20px;
-    color: var(--brand-primary);
+  font-size: 20px;
+  color: var(--brand-primary);
 }
 .privacy-nav a:hover {
-    color: var(--brand-secondary);
+  color: var(--brand-secondary);
 }
-
 
 section:not(.hero--other, .privacy-nav) {
-    text-align: justify;
+  text-align: justify;
 }
 
-section:not(.hero--other, .privacy-nav)  p {
-    line-height: 2;
+section:not(.hero--other, .privacy-nav) p {
+  line-height: 2;
 }
 
 .cookies-list li {
-    margin-top: 24px;
-    position: relative;
-    color: var(--brand-primary);
+  margin-top: 24px;
+  position: relative;
+  color: var(--brand-primary);
 }
 
 .third-party-list {
-    padding-left: 24px;
-    margin-top: 24px;
+  padding-left: 24px;
+  margin-top: 24px;
 }
 .third-party-list li {
-    line-height: 2;
-    list-style-type: disc;
+  line-height: 2;
+  list-style-type: disc;
 }
 
 #scroll-to-top {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
-@media screen and (max-width:540px) {
-    .heading--medium {
-        font-size: 32px;
-    }
-    .heading--small {
-        font-size: 24px;
-    }
+@media screen and (max-width: 540px) {
+  .heading--medium {
+    font-size: 32px;
+  }
+  .heading--small {
+    font-size: 24px;
+  }
 
-    section:not(.hero--other, .privacy-nav) {
-        text-align: left;
-    }
-    section:not(.hero--other) {
-        width: 100%;
-        padding-inline: 24px;
-    }
-
-    .privacy-nav a {
-        font-size: 24px;
-    }
+  section:not(.hero--other, .privacy-nav) {
+    text-align: left;
+  }
+  section:not(.hero--other) {
+    width: 100%;
+    padding-inline: 24px;
+  }
+  section:not(.hero--other, .privacy-nav) p {
+    line-height: 1.5;
+  }
+  .privacy-nav a {
+    font-size: 24px;
+  }
 }
