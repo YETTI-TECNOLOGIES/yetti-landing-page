@@ -1,5 +1,5 @@
 const swiper = new Swiper(".swiper", {
-  //autoplay: true,
+  autoplay: true,
   speed: 400,
   spaceBetween: 50,
 
