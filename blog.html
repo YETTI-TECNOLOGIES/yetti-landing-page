@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Koladele Olaitan" />
+
+    <!-- ==== Font Awesome ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+      integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ==== Google Fonts ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==== Swiper CSS ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- ==== Personal CSS ==== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Blog - Yetti Technologies</title>
+
+    <!-- ==== JavaScript ==== -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/newsletter.js" defer></script>
+  </head>
+  <body>
+    <!-- ==== desktop header ==== -->
+    <header>
+      <div class="header-inner">
+        <a href="index.html" id="logo">
+          <img src="assets/logo.png" alt="Yetti Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#pricing">Pricings</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="mailto:info@myyetti.co">Email Us</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons">
+          <a href="#" class="btn btn--fill">Sign in</a>
+          <a href="#" class="btn btn--fill">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="fix-padding"></div>
+
+    <!-- ==== mobile header ==== -->
+    <div class="mobile-header">
+      <div class="mobile-header-inner">
+        <a href="index.html" class="mobile-logo"><img src="assets/logo.png" alt="Yetti logo" /></a>
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==== mobile navbar ==== -->
+    <div class="mobile-navbar">
+      <div class="mobile-navbar-inner">
+        <ul class="mobile-navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#pricing">Pricings</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="mailto:info@myyetti.co">Email Us</a></li>
+        </ul>
+        <a href="#" class="btn btn--fill">Sign in</a>
+        <a href="#" class="btn btn--fill">Get Started</a>
+      </div>
+    </div>
+
+    <main>
+      <h1 class="heading--large">Trending</h1>
+      <section id="trending" class="swiper">
+        <div class="trending_slider swiper-wrapper">
+          <div class="trending_slide swiper-slide">
+            <div class="trending-img">
+              <img src="assets/blog.png" alt="Blog Post Image" />
+            </div>
+            <div class="trending-text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="trending_post-title">
+                1 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending_slide swiper-slide">
+            <div class="trending-img">
+              <img src="assets/blog.png" alt="Blog Post Image" />
+            </div>
+            <div class="trending-text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="trending_post-title">
+                2 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending_slide swiper-slide">
+            <div class="trending-img">
+              <img src="assets/blog.png" alt="Blog Post Image" />
+            </div>
+            <div class="trending-text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="trending_post-title">
+                3 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending_slide swiper-slide">
+            <div class="trending-img">
+              <img src="assets/blog.png" alt="Blog Post Image" />
+            </div>
+            <div class="trending-text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="trending_post-title">
+                4 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <section id="recent-posts">
+        <h1 class="heading--large">Recent Posts</h1>
+        <div class="posts--wrap">
+          <div class="post-card">
+            <div class="post-card-img">
+              <img src="assets/blog.png" alt="Recent Post" />
+            </div>
+            <div class="recent-post_text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="recent_post-title">
+                4 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-card">
+            <div class="post-card-img">
+              <img src="assets/blog.png" alt="Recent Post" />
+            </div>
+            <div class="recent-post_text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="recent_post-title">
+                4 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-card">
+            <div class="post-card-img">
+              <img src="assets/blog.png" alt="Recent Post" />
+            </div>
+            <div class="recent-post_text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="recent_post-title">
+                4 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-card">
+            <div class="post-card-img">
+              <img src="assets/blog.png" alt="Recent Post" />
+            </div>
+            <div class="recent-post_text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="recent_post-title">
+                4 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-card">
+            <div class="post-card-img">
+              <img src="assets/blog.png" alt="Recent Post" />
+            </div>
+            <div class="recent-post_text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="recent_post-title">
+                4 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-card">
+            <div class="post-card-img">
+              <img src="assets/blog.png" alt="Recent Post" />
+            </div>
+            <div class="recent-post_text">
+              <div class="post-info">
+                <span class="post-category">Business, Travel</span>
+                <span class="post-date">- July 2, 2020.</span>
+              </div>
+              <a href="post.html" class="recent_post-title">
+                4 Your most unhappy customers are your greatest source of learning.</a
+              >
+              <p class="post-excerpts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, itaque molestias?
+                Vero reiciendis eveniet, quae voluptas nam quod quos illum.
+              </p>
+              <div class="author-info">
+                <div class="author-img"><img src="assets/hero-image.png" alt="Author Image" /></div>
+                <div>
+                  <a href="#" class="author-name">Sergey Campbell</a>
+                  <p class="author-post">CEO, Yetti</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="scroll-to-top" class="active"><ion-icon name="chevron-up-outline"></ion-icon></div>
+
+    <div class="newsletter-popup">
+      <p class="msg-one"></p>
+      <p class="msg-two"></p>
+      <button>Ok</button>
+    </div>
+    <div class="overlay"></div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="col-4">
+          <a href="index.html" class="footer-logo"
+            ><img src="assets/logo.png" alt="Yetti logo"
+          /></a>
+          <p>Phone: <a href="tel:+2349073767709">+234 907 3767 709</a></p>
+          <p>Email: <a href="mailto:info@myyetti.co">info@yetti.yettiservice.com</a></p>
+        </div>
+        <div class="col-4">
+          <h3 class="footer-heading">Resources</h3>
+          <ul>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h3 class="footer-heading">Subscribe to our newsletter</h3>
+          <form class="newsletter">
+            <p class="newsletter--msg">Your email address is not valid!</p>
+            <input type="email" placeholder="Your email address" />
+            <input type="submit" value="Subscribe" id="submit-n" />
+          </form>
+        </div>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/yettiofficial_/?igshid=YmMyMTA2M2Y%3D(&__coig_restricted=1"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/YETTIOFFICIAL?t=ZP1Sn33Kyn8xeFffIxVIgw&s=08" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://t.me/yetticommunity" target="_blank"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+      </div>
+      <p class="copyright">&copy; Yetti technologies 2022. All rights reserved.</p>
+    </footer>
+
+    <!-- ==== Ionic Icon ==== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- ==== GSAP ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <!-- ==== Swiper JS ==== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/blog.js"></script>
+  </body>
+</html>
