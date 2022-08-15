@@ -152,6 +152,39 @@ main > h1 {
   color: var(--text-color);
 }
 
+/* post page */
+.blog-post {
+  width: 70%;
+  margin: 32px auto 0;
+}
+.blog-post_title {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.blog-post_featured-img {
+  width: 100%;
+}
+.blog-post_featured-img img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.blog-post_content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.heading--sub-1,
+.heading--sub-2 {
+  margin: 16px 0 8px;
+}
+.heading--sub-1 {
+  font-size: 2rem;
+}
+.heading--sub-2 {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 1024px) {
   main {
     width: 95%;
@@ -159,6 +192,10 @@ main > h1 {
 }
 
 @media screen and (max-width: 820px) {
+  .blog-post {
+    width: 100%;
+    padding-inline: 24px;
+  }
   .swiper {
     height: 700px;
   }
@@ -206,5 +243,13 @@ main > h1 {
 
   .post-card {
     width: 100%;
+  }
+
+  .blog-post {
+    padding: 0;
+  }
+  .blog-post_title {
+    font-size: 2rem;
+    line-height: 1.2;
   }
 }

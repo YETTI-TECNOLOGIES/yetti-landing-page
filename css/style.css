@@ -425,12 +425,13 @@ nav li.active-page::after {
   height: 100px;
   border-radius: 24px;
 }
+.op-box img {
+  width: 100%;
+}
 .operation-card_1 .op-box {
-  background-color: var(--brand-primary);
   position: relative;
 }
 .operation-card_2 .op-box {
-  background-color: var(--brand-secondary);
   position: relative;
 }
 .operation-card_1 .op-box::after,
@@ -445,9 +446,6 @@ nav li.active-page::after {
   background-image: url("../assets/line.png");
   background-size: contain;
   background-repeat: no-repeat;
-}
-.operation-card_3 .op-box {
-  background-color: var(--brand-accent);
 }
 .op-number {
   font-size: 14px;
@@ -495,14 +493,13 @@ nav li.active-page::after {
   justify-content: space-between;
 }
 .activity_image {
-  width: 200px;
-  height: 400px;
-  border: 1px solid var(--text-color);
-  border-radius: 16px;
-  background-color: var(--white);
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.activity_image img {
+  width: 100%;
 }
 .activity_container {
   width: 50%;
@@ -531,18 +528,10 @@ nav li.active-page::after {
 }
 .outline_container .circle {
   width: 60px;
-  height: 60px;
-  border-radius: 50%;
   flex-shrink: 0;
 }
-.outline_container .circle.c-1 {
-  background-color: var(--brand-primary);
-}
-.outline_container .circle.c-2 {
-  background-color: var(--brand-secondary);
-}
-.outline_container .circle.c-3 {
-  background-color: var(--brand-accent);
+.outline_container .circle img {
+  width: 100%;
 }
 .outline_desc {
   width: 80%;
