@@ -8,6 +8,10 @@
   margin-top: 24px;
 }
 
+li {
+  line-height: 2;
+}
+
 header {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.5);
@@ -35,6 +39,7 @@ section:not(.hero--other) {
   padding-left: 24px;
 }
 .privacy-nav ul li {
+  line-height: 1.2;
   position: relative;
   list-style-type: disc;
   color: var(--brand-primary);
@@ -74,8 +79,16 @@ section:not(.hero--other, .privacy-nav) p {
   margin-top: 24px;
 }
 .third-party-list li {
-  line-height: 2;
   list-style-type: disc;
+}
+
+/* Terms of service page */
+ol {
+  padding-left: 24px;
+}
+ol li {
+  list-style-type: decimal;
+  padding-left: 8px;
 }
 
 #scroll-to-top {
@@ -97,7 +110,8 @@ section:not(.hero--other, .privacy-nav) p {
     width: 100%;
     padding-inline: 24px;
   }
-  section:not(.hero--other, .privacy-nav) p {
+  section:not(.hero--other, .privacy-nav) p,
+  li {
     line-height: 1.5;
   }
   .privacy-nav a {
