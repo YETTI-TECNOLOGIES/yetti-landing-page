@@ -123,6 +123,7 @@ body {
   line-height: 1.4;
   background-color: var(--primary-bg);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 /* desktop header */
@@ -391,6 +392,25 @@ nav li.active-page::after {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .hero .heading--large,
+  .heading--large {
+    font-size: 40px;
+  }
+  .mobile-header-inner {
+    padding-inline: 12px;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-inner {
+    height: auto;
+  }
+  .hero--half img {
+    width: 100%;
+  }
+}
+
 /* operation */
 #operation {
   width: 100%;
@@ -556,12 +576,34 @@ nav li.active-page::after {
   .activity_outline {
     width: 100%;
   }
-
+  .activity-inner {
+    flex-direction: column;
+    width: 100%;
+  }
   .activity_container {
     padding: 32px 16px;
+    border-radius: 0;
+  }
+
+  .outline_container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .outline_container > div {
+    width: 100%;
   }
   .outline_container .circle {
-    width: 40px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .activity_container {
+    padding: 24px 12px;
+  }
+  .outline_container .circle {
+    width: 60px;
   }
 }
 
@@ -655,6 +697,19 @@ nav li.active-page::after {
   }
   .pricing-container {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #pricing {
+    padding: 40px 0;
+  }
+  .pricing-inner {
+    width: 100%;
+    padding-inline: 12px;
+  }
+  .pricing-container {
+    padding: 24px 12px;
   }
 }
 
@@ -850,7 +905,6 @@ footer .col-4 p {
   .header-inner,
   .hero-inner,
   .operation-inner,
-  .activity-inner,
   .footer-inner {
     width: 95%;
   }
@@ -866,7 +920,6 @@ footer .col-4 p {
   .header-inner,
   .hero-inner,
   .operation-inner,
-  .activity-inner,
   .footer-inner {
     flex-direction: column;
     width: 100%;
@@ -888,5 +941,14 @@ footer .col-4 p {
   }
   .newsletter--msg {
     top: -5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header-inner,
+  .hero-inner,
+  .operation-inner,
+  .footer-inner {
+    padding-inline: 12px;
   }
 }
