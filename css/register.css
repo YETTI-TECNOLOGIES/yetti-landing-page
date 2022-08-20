@@ -1,0 +1,91 @@
+/* Signup page */
+body {
+  color: var(--login-text-color);
+}
+
+#logo {
+  position: absolute;
+  top: 24px;
+  left: 5%;
+  width: 50px;
+}
+#logo img {
+  width: 100%;
+}
+
+.signup_container {
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+}
+.signup_form {
+  width: 100%;
+}
+.form_title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.signup_form :is(input, label) {
+  display: block;
+  width: 100%;
+}
+.form_group {
+  margin: 16px 0;
+}
+label {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+input:not(input[type="submit"]) {
+  padding: 16px;
+  border: 1px solid var(--text-color-2);
+  border-radius: 5px;
+}
+input:not(input[type="submit"]):active,
+input:not(input[type="submit"]):focus {
+  border-color: var(--brand-primary);
+}
+.form_group.has-domain {
+  margin-bottom: 0;
+}
+.form_group.has-domain > div {
+  position: relative;
+}
+
+.domain {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-2);
+}
+.form_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
+.form_checkbox :is(input, label) {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+.form_checkbox a {
+  color: var(--brand-secondary);
+}
+.redir-login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+.redir-login * {
+  color: var(--text-color-2);
+}
