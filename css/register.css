@@ -3,6 +3,18 @@ body {
   color: var(--login-text-color);
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: unset;
+}
+
+.d-none {
+  opacity: 0;
+  display: none;
+}
+
 #logo {
   position: absolute;
   top: 24px;
@@ -17,6 +29,8 @@ body {
   width: 90%;
   max-width: 400px;
   margin: 100px auto;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 .signup_form {
   width: 100%;
@@ -88,4 +102,113 @@ input:not(input[type="submit"]):focus {
 }
 .redir-login * {
   color: var(--text-color-2);
+}
+
+/* Get started step form */
+.get-started {
+  width: 95%;
+  max-width: 800px;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.gs_slider {
+  width: 100%;
+  display: flex;
+}
+.gs_slide--left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  background-color: unset;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s;
+}
+.gs_slide--left.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.gs_slide--left ion-icon {
+  font-size: 24px;
+  color: var(--text-color-2);
+}
+.gs_slider :is(h1, h2, h4) {
+  text-align: center;
+  margin: 0 auto 24px;
+}
+.gs_slider h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-2);
+  margin-bottom: 12px;
+}
+.gs_slide--title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.gs_slider > div {
+  padding-inline: 10%;
+  flex-shrink: 0;
+  width: 100%;
+}
+.gs_field {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #cacaca;
+}
+.gs_field > div:not(.gs_field--half),
+.gs_field--half > div {
+  padding: 16px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #cacaca;
+}
+.gs_field > div:last-of-type,
+.gs_field--half > div:last-of-type {
+  border: none;
+}
+.gs_field :is(label, input) {
+  margin: 0;
+  padding: 0;
+}
+.gs_field label {
+  color: #2c3131;
+  font-weight: 400;
+}
+.gs_field--split {
+  display: flex;
+}
+.gs_field--half {
+  flex-shrink: 0;
+  width: 50%;
+}
+.gs_field--half:first-of-type {
+  border-right: 1px solid #cacaca;
+}
+.gs_buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.gs_slide-0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.gs_slide-0 p {
+  margin-bottom: 24px;
 }
