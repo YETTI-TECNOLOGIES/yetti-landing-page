@@ -37,6 +37,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Signup - Yetti Technologies</title>
 
+    <!-- ==== Axios ==== -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+
     <!-- ==== Personal JS ==== -->
     <script src="js/register.js" defer></script>
   </head>
@@ -88,17 +91,17 @@
 
     <div class="get-started d-none">
       <div class="gs_slider">
-        <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
         <div class="gs_slide-0">
           <h1>Let's help create your store beautifully</h1>
           <p>
             Answer a few questions to get started on your store creation/customization with our
             tools specially made for you.
           </p>
-          <button class="btn btn--fill">Get started</button>
+          <button class="btn btn--fill gs_init">Get started</button>
         </div>
 
-        <div class="gs_slide-1">
+        <div class="gs_slide-1 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
           <h4>Step 1 of 4</h4>
           <h2 class="gs_slide--title">Which best describes you?</h2>
           <fieldset class="gs_field" id="gs_field-1">
@@ -117,7 +120,8 @@
           </div>
         </div>
 
-        <div class="gs_slide-2">
+        <div class="gs_slide-2 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
           <h4>Step 2 of 4</h4>
           <h2 class="gs_slide--title">What industry are you in?</h2>
           <fieldset class="gs_field gs_field--split" id="gs_field-2">
@@ -213,7 +217,8 @@
           </div>
         </div>
 
-        <div class="gs_slide-3">
+        <div class="gs_slide-3 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
           <h4>Step 3 of 4</h4>
           <h2 class="gs_slide--title">What kind of products do/will you sell?</h2>
           <fieldset class="gs_field" id="gs_field-3">
@@ -244,14 +249,20 @@
           </div>
         </div>
 
-        <div class="gs_slide-4">
+        <div class="gs_slide-4 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
           <h4>Step 4 of 4</h4>
           <h2 class="gs_slide--title">Where is your business located?</h2>
-          <fieldset class="gs_field" id="gs_field-3">
-            <div>
-              <input type="radio" id="rad-25" value="25" name="description" />
-              <label for="rad-25">Physical Products</label>
-            </div>
+          <fieldset class="gs_field gs_field--country" id="gs_field-3">
+            <select name="business-location" id="business-location">
+              <option value="">Select country</option>
+              <option value="Israel" class="country">
+                <div>
+                  <img src="https://flagcdn.com/w320/il.png" alt="Israel flag" />
+                  <p>Israel</p>
+                </div>
+              </option>
+            </select>
           </fieldset>
           <div class="gs_buttons">
             <button class="skip">Skip</button>
