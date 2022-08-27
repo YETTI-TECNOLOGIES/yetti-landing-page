@@ -11,7 +11,8 @@ const regFormContainer = document.querySelector(".signup_container");
 const regForm = document.querySelector(".signup_form");
 
 const stepContainer = document.querySelector(".get-started");
-const gsSLider = document.querySelector(".gs_slider");
+const gsSlider = document.querySelector(".gs_slider");
+const gsSlide = document.querySelectorAll(".gs_slide");
 const gsPrev = document.querySelectorAll(".gs_slide--left");
 const gsNext = document.querySelectorAll(".gs_next");
 const gsSkip = document.querySelectorAll(".skip");
@@ -32,19 +33,20 @@ function hideRegForm() {
 }
 
 let counter = 0;
-let slidesLength = 4;
+let slidesLength = gsSlide.length;
+let size = 100 / slidesLength;
 
 function nextSlide() {
   if (counter === slidesLength) return;
   counter++;
-  gsSLider.style.transform = `translateX(-${counter * 20}%)`;
+  gsSlider.style.transform = `translateX(-${counter * size}%)`;
   stepContainer.scrollIntoView();
 }
 
 function prevSlide() {
   if (counter === 0) return;
   counter--;
-  gsSLider.style.transform = `translateX(-${counter * 20}%)`;
+  gsSlider.style.transform = `translateX(-${counter * size}%)`;
 }
 
 /*
@@ -90,11 +92,12 @@ let countries = [];
 axios.get("https://restcountries.com/v3.1/all").then(function (response) {
   const countryInfo = response.data;
   for (const value of countryInfo.values()) {
-    let country = {
-      name: value.name.common,
-      flag: value.flags.png,
-    };
+    let country = value.name.common;
     countries.push(country);
   }
-  console.log(countries);
+  countries.sort();
+  countries.forEach((country) => {
+    let countryHtml = `<option value="${country}" class="country">${country}</option>`;
+    countryList.insertAdjacentHTML("beforeend", countryHtml);
+  });
 });

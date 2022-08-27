@@ -114,7 +114,7 @@ input:not(input[type="submit"]):focus {
 }
 .gs_slider {
   margin: 100px 0;
-  width: 500%;
+  width: 600%;
   display: flex;
   transition: transform 0.5s ease;
 }
@@ -124,7 +124,7 @@ input:not(input[type="submit"]):focus {
 .gs_slide--left {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
   height: 32px;
   width: 32px;
   background-color: unset;
@@ -153,7 +153,7 @@ input:not(input[type="submit"]):focus {
 .gs_slider > div {
   padding-inline: 100px;
   flex-shrink: 0;
-  width: 20%;
+  width: calc(100% / 6);
 }
 .gs_field {
   width: 100%;
@@ -227,6 +227,23 @@ input:not(input[type="submit"]):focus {
   gap: 24px;
 }
 
+.gs_slide--split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gs_slide--half {
+  width: 47.5%;
+}
+.gs_field--half:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.gs_slide--half :is(h2, h4, a) {
+  text-align: left;
+}
+
 @media screen and (min-width: 1480px) {
   .get-started {
     max-width: 1024px;
@@ -234,6 +251,12 @@ input:not(input[type="submit"]):focus {
 }
 
 @media screen and (max-width: 540px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
   .get-started {
     width: 100%;
     max-width: 100%;
