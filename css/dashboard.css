@@ -1,0 +1,76 @@
+.db_container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-bg);
+}
+.db_sidebar {
+  width: 20%;
+  height: 100%;
+  flex-shrink: 0;
+  border-right: 1px solid var(--db-grey);
+  display: flex;
+  flex-direction: column;
+}
+.db_sidebar h1 {
+  font-size: 20px;
+}
+.db_main {
+  width: 80%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.db_logo {
+  width: 100%;
+  padding: 28px 20px;
+}
+.db_logo a {
+  display: block;
+  width: 70px;
+}
+.db_logo img {
+  width: 100%;
+}
+
+.db_user-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid var(--db-grey);
+  border-bottom: 1px solid var(--db-grey);
+  margin-bottom: 10px;
+}
+
+.db_nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.db_nav li,
+.db_settings li {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-color-2);
+  background-color: inherit;
+  transition: background-color 0.4s;
+}
+.db_nav li.active,
+.db_nav li:hover,
+.db_settings li:hover {
+  border-left: 4px solid var(--brand-primary);
+  color: var(--brand-primary);
+  background-color: var(--db-grey);
+  cursor: pointer;
+}
+
+.db_settings h1 {
+  padding: 20px;
+  border-top: 1px solid var(--db-grey);
+  border-bottom: 1px solid var(--db-grey);
+  color: var(--text-color-2);
+}

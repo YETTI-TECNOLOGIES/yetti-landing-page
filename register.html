@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Koladele Olaitan" />
+
+    <!-- ==== Font Awesome ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+      integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ==== Google Fonts ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==== Personal CSS ==== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Signup - Yetti Technologies</title>
+
+    <!-- ==== Axios ==== -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+
+    <!-- ==== Personal JS ==== -->
+    <script src="js/register.js" defer></script>
+  </head>
+  <body>
+    <a href="index.html" id="logo">
+      <img src="assets/logo-2.png" alt="Yetti Logo" />
+    </a>
+    <div class="signup_container">
+      <form action="" class="signup_form">
+        <h1 class="form_title">Create your store</h1>
+        <div class="form_group">
+          <label for="store-name">Store name</label>
+          <input type="text" id="store-name" placeholder="Enter your store name" />
+        </div>
+        <div class="form_group">
+          <label for="fullname">Fullname</label>
+          <input type="text" id="fullname" placeholder="Enter your fullname" />
+        </div>
+        <div class="form_group">
+          <label for="signup-email">Email address</label>
+          <input type="email" id="signup-email" placeholder="Enter your email address" />
+        </div>
+        <div class="form_group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="Enter a password" />
+        </div>
+        <div class="form_group">
+          <label for="signup-password-2">Confirm Password</label>
+          <input type="password" id="signup-password-2" placeholder="Confirm password" />
+        </div>
+        <div class="form_group has-domain">
+          <label for="store-domain">Store domain</label>
+          <div>
+            <input type="text" id="store-domain" placeholder="Your store name" />
+            <span class="domain">.yetti.com</span>
+          </div>
+        </div>
+        <div class="form_checkbox">
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">I agree to the <a href="terms.html">terms and conditions.</a></label>
+        </div>
+        <input type="submit" value="Create store" class="btn btn--fill" />
+        <div class="redir-login">
+          <p>Already have an account?</p>
+          <a href="login.html" class="goto-login">Login</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="get-started d-none">
+      <div class="gs_slider">
+        <div class="gs_slide-0 gs_slide">
+          <h1>Let's help create your store beautifully</h1>
+          <p>
+            Answer a few questions to get started on your store creation/customization with our
+            tools specially made for you.
+          </p>
+          <button class="btn btn--fill gs_init">Get started</button>
+        </div>
+
+        <div class="gs_slide-1 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <h4>Step 1 of 4</h4>
+          <h2 class="gs_slide--title">Which best describes you?</h2>
+          <fieldset class="gs_field" id="gs_field-1">
+            <div>
+              <input type="radio" id="rad-1" value="1" name="description" />
+              <label for="rad-1">I am a new business owner</label>
+            </div>
+            <div>
+              <input type="radio" id="rad-2" value="2" name="description" />
+              <label for="rad-2">I have a business already</label>
+            </div>
+          </fieldset>
+          <div class="gs_buttons">
+            <button class="skip">Skip</button>
+            <button class="btn btn--fill gs_next">Next</button>
+          </div>
+        </div>
+
+        <div class="gs_slide-2 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <h4>Step 2 of 4</h4>
+          <h2 class="gs_slide--title">What industry are you in?</h2>
+          <fieldset class="gs_field gs_field--split" id="gs_field-2">
+            <div class="gs_field--half">
+              <div>
+                <input type="radio" id="rad-5" value="5" name="industry" />
+                <label for="rad-5">Arts and Photography</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-6" value="6" name="industry" />
+                <label for="rad-6">Automobile</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-7" value="7" name="industry" />
+                <label for="rad-7">Books and Magazines</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-8" value="8" name="industry" />
+                <label for="rad-8">Charities and cause</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-9" value="9" name="industry" />
+                <label for="rad-9">Construction and Industrial</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-10" value="10" name="industry" />
+                <label for="rad-10">Crafts</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-11" value="11" name="industry" />
+                <label for="rad-11">Design and Marketing</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-12" value="12" name="industry" />
+                <label for="rad-12">Education and Learning</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-13" value="13" name="industry" />
+                <label for="rad-13">Fashion and Apparel</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-14" value="14" name="industry" />
+                <label for="rad-14">Flowers, Gifts and Collectibles</label>
+              </div>
+            </div>
+
+            <div class="gs_field--half">
+              <div>
+                <input type="radio" id="rad-15" value="15" name="industry" />
+                <label for="rad-15">Home and Furniture</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-16" value="16" name="industry" />
+                <label for="rad-16">Jewelry</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-17" value="17" name="industry" />
+                <label for="rad-17">Music</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-18" value="18" name="industry" />
+                <label for="rad-18">Pets and Pet care</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-19" value="19" name="industry" />
+                <label for="rad-19">Software and Technology</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-20" value="20" name="industry" />
+                <label for="rad-20">Sports and Recreations</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-21" value="21" name="industry" />
+                <label for="rad-21">Stationery and Office supplies</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-22" value="22" name="industry" />
+                <label for="rad-22">Templates and Printables</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-23" value="23" name="industry" />
+                <label for="rad-23">Travel and Leisure</label>
+              </div>
+              <div>
+                <input type="radio" id="rad-24" value="24" name="industry" />
+                <label for="rad-24">Health and Beauty</label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="gs_buttons">
+            <button class="skip">Skip</button>
+            <button class="btn btn--fill gs_next">Next</button>
+          </div>
+        </div>
+
+        <div class="gs_slide-3 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <h4>Step 3 of 4</h4>
+          <h2 class="gs_slide--title">What kind of products do/will you sell?</h2>
+          <fieldset class="gs_field" id="gs_field-3">
+            <div>
+              <input type="radio" id="rad-25" value="25" name="description" />
+              <label for="rad-25">Physical Products</label>
+            </div>
+            <div>
+              <input type="radio" id="rad-26" value="26" name="description" />
+              <label for="rad-26">Digital Products</label>
+            </div>
+            <div>
+              <input type="radio" id="rad-27" value="27" name="description" />
+              <label for="rad-27">Services</label>
+            </div>
+            <div>
+              <input type="radio" id="rad-28" value="28" name="description" />
+              <label for="rad-28">Tickets</label>
+            </div>
+            <div>
+              <input type="radio" id="rad-29" value="29" name="description" />
+              <label for="rad-29">Memberships</label>
+            </div>
+          </fieldset>
+          <div class="gs_buttons">
+            <button class="skip">Skip</button>
+            <button class="btn btn--fill gs_next">Next</button>
+          </div>
+        </div>
+
+        <div class="gs_slide-4 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <h4>Step 4 of 4</h4>
+          <h2 class="gs_slide--title">Where is your business located?</h2>
+          <fieldset class="gs_field gs_field--country" id="gs_field-3">
+            <select name="business-location" id="business-location">
+              <option value="">Select country</option>
+            </select>
+          </fieldset>
+          <div class="gs_buttons">
+            <button class="skip">Skip</button>
+            <button class="btn btn--fill gs_next">Next</button>
+          </div>
+        </div>
+
+        <div class="gs_slide-5 gs_slide">
+          <button class="gs_slide--left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <div class="gs_slide--split">
+            <div class="gs_slide--half">
+              <h4>Final step</h4>
+              <h2 class="gs_slide--title">
+                Proceed to dashboard to <br />
+                complete your store setup.
+              </h2>
+              <a href="dashboard.html" class="btn btn--fill show-db">Proceed to dashboard</a>
+            </div>
+            <div class="gs_slide--half">
+              <img src="assets/dashboard-img.png" alt="Yetti dashboard image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==== Ionic Icon ==== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
