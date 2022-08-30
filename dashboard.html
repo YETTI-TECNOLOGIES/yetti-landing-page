@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Koladele Olaitan" />
+
+    <!-- ==== Font Awesome ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+      integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ==== Google Fonts ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==== Personal CSS ==== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Dashboard - Yetti Technologies</title>
+  </head>
+  <body>
+    <div class="db_container">
+      <aside class="db_sidebar">
+        <div class="db_logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="Yetti Logo" />
+          </a>
+        </div>
+        <div class="db_user-container">
+          <h1 class="db_username">Micheline</h1>
+          <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+        <div class="db_nav">
+          <ul>
+            <li data-target="store" class="active">
+              <i class="fa-solid fa-shop"></i>
+              My Store
+            </li>
+            <li data-target="orders">
+              <i class="fa-solid fa-basket-shopping"></i>
+              My Orders
+            </li>
+            <li data-target="products">
+              <i class="fa-solid fa-cube"></i>
+              Products
+            </li>
+            <li data-target="customers">
+              <i class="fa-solid fa-users"></i>
+              My Customers
+            </li>
+            <li data-target="marketing">
+              <i class="fa-solid fa-bullhorn"></i>
+              Marketing
+            </li>
+            <li data-target="reviews">
+              <i class="fa-regular fa-message"></i>
+              Store Reviews
+            </li>
+            <li data-target="txn-history">
+              <i class="fa-regular fa-file"></i>
+              Transaction History
+            </li>
+          </ul>
+        </div>
+        <div class="db_settings">
+          <h1>Settings</h1>
+          <ul>
+            <li data-target="txn-history">
+              <i class="fa-solid fa-gear"></i>
+              Store Settings
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="db_main"></main>
+    </div>
+  </body>
+</html>
