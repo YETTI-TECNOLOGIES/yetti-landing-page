@@ -46,12 +46,11 @@
   margin-bottom: 16px;
   font-weight: 500;
 }
-.wc_inner p {
+.wc--half > p {
   font-size: 16px;
-  margin-bottom: 16px;
 }
 .waiting-list_form {
-  padding-top: 24px;
+  padding-top: 20px;
   width: 100%;
   font-size: 16px;
   position: relative;
@@ -78,7 +77,7 @@
 .wl--msg {
   font-size: 14px;
   position: absolute;
-  top: -5px;
+  top: 0;
   display: none;
 }
 .wl--msg.warning {
