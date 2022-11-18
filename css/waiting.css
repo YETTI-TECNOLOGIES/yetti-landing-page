@@ -74,6 +74,12 @@
 .waiting-list_form input[type="submit"]:hover {
   background-color: var(--brand-secondary);
 }
+.waitlist-btns {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .wl--msg {
   font-size: 14px;
   position: absolute;
@@ -153,6 +159,7 @@
   .waiting-container {
     padding: 24px;
     height: 100vh;
+    text-align: center;
   }
   #logo-temp {
     width: 80px;
