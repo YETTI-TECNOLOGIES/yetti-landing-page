@@ -32,7 +32,6 @@
 
     <!-- ==== Personal CSS ==== -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/waiting.css" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Homepage - Yetti Technologies</title>
@@ -47,11 +46,9 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/main.js" defer></script>
     <script src="js/index.js" defer></script>
-    <!-- <script src="js/newsletter.js" defer></script> -->
-    <script src="js/waiting.js" defer></script>
   </head>
   <body>
-    <div style="display: none">
+    <div>
       <!-- ==== desktop header ==== -->
       <header>
         <div class="header-inner">
@@ -62,13 +59,14 @@
             <ul>
               <li class="active-page"><a href="index.html">Home</a></li>
               <li><a href="#pricing">Pricings</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <!-- <li><a href="blog.html">Blog</a></li> -->
               <li><a href="mailto:info@myyetti.co">Email Us</a></li>
             </ul>
           </nav>
           <div class="nav-buttons">
-            <a href="login.html" class="btn btn--fill">Login</a>
-            <a href="register.html" class="btn btn--fill">Get Started</a>
+            <a href="https://www.myyetti.store/" class="btn btn--fill">Login</a>
+            <a href="https://www.myyetti.store/" class="btn btn--fill">Get Started</a>
+            <!-- <a href="index.html" class="btn btn--fill">Join Waitlist</a> -->
           </div>
         </div>
       </header>
@@ -96,8 +94,8 @@
             <li><a href="https://blog-myyetti.blogspot.com/">Blog</a></li>
             <li><a href="mailto:info@myyetti.co">Email Us</a></li>
           </ul>
-          <a href="login.html" class="btn btn--fill">Login</a>
-          <a href="register.html" class="btn btn--fill">Get Started</a>
+          <a href="https://www.myyetti.store/" class="btn btn--fill">Login</a>
+          <a href="https://www.myyetti.store/" class="btn btn--fill">Get Started</a>
         </div>
       </div>
 
@@ -113,7 +111,7 @@
               Get your business the recognition it deserves with marketing tools
               that scale.
             </p>
-            <a href="#" class="btn btn--fill slide--to-right">Create a store</a>
+            <!-- <a href="#" class="btn btn--fill slide--to-right">Create a store</a> -->
           </div>
           <div class="hero--half">
             <img
@@ -274,7 +272,7 @@
               <li><a href="faqs.html">FAQs</a></li>
               <li><a href="terms.html">Terms of service</a></li>
               <li><a href="privacy.html">Privacy policy</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <!-- <li><a href="blog.html">Blog</a></li> -->
             </ul>
           </div>
           <div class="col-4">
@@ -306,42 +304,6 @@
         </p>
       </footer>
     </div>
-
-    <!-- ==== waiting list (temporary) ==== -->
-    <div class="waiting-container">
-      <a href="homepage.html" id="logo-temp">
-        <img src="assets/logo.png" alt="Yetti Logo" />
-      </a>
-      <div class="wc_inner">
-        <div class="wc--half">
-          <h1>
-            Want to know when we launch? <br />
-            Join our waiting list.
-          </h1>
-          <p>
-            Kindly supply your e-mail below and you'd be the first to know when
-            we launch!
-          </p>
-          <form class="waiting-list_form">
-            <p class="wl--msg">Your email address is not valid!</p>
-            <input type="email" placeholder="Enter email address" />
-            <div class="waitlist-btns">
-              <input type="submit" value="Submit" />
-              <a href="homepage.html" class="btn btn--fill">Homepage</a>
-            </div>
-          </form>
-        </div>
-        <div class="wc--half waiting-img">
-          <img src="assets/hero-image.png" alt="Yetti Illustration" />
-        </div>
-      </div>
-    </div>
-    <div class="wl-popup">
-      <p class="msg-one"></p>
-      <p class="msg-two"></p>
-      <button>Ok</button>
-    </div>
-    <div class="wl-overlay"></div>
 
     <!-- ==== Ionic Icon ==== -->
     <script
