@@ -1,0 +1,352 @@
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+* {
+  font-family: poppins;
+}
+
+nav .nav-item .dropdown-menu a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s linear;
+}
+nav .nav-item .dropdown-menu a p {
+  color: rgba(0, 0, 0, 0.5960784314);
+  position: relative;
+  padding-bottom: 10px;
+}
+nav .nav-item .dropdown-menu a p::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3764705882);
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s linear;
+}
+
+nav .nav-item .dropdown-menu a:hover {
+  color: black;
+}
+nav .nav-item .dropdown-menu a:hover p::before {
+  width: 100%;
+  right: 0;
+}
+
+.nav-link.dropdown-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+header .hero h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #979797;
+}
+header .hero p {
+  color: #757575;
+}
+header .hero .btn {
+  background: #02A9F7;
+  color: white;
+}
+
+main #first-section {
+  flex-direction: column;
+  justify-content: center;
+}
+main #first-section .container {
+  margin-top: 1rem;
+}
+main #first-section .container > :first-child {
+  margin-bottom: 1rem;
+}
+main #first-section .container .row .first-box {
+  background: #FFECD9;
+}
+main #first-section .container .row .first-box h5 {
+  color: #02A9F7;
+}
+main #first-section .container .row .second-box {
+  background: #D8E7FD;
+}
+main #first-section .container .row .second-box h5 {
+  color: #E5912C;
+}
+main #first-section .container .row .third-box {
+  background: #B9C4E1;
+}
+main #first-section .container .row .third-box h5 {
+  color: #FFFFFF;
+}
+main #first-section .container .row .box {
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  transition: 0.1s ease-in-out;
+}
+main #first-section .container .row .box img {
+  width: 45px;
+}
+main #first-section .container .row .box:hover {
+  transform: scale(1.05);
+}
+main #second-section {
+  background: #FFF8E7;
+}
+main #second-section .container-txt {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "a a b b";
+}
+main #second-section .container-txt img {
+  grid-area: a;
+}
+main #second-section .container-txt .txt-section {
+  grid-area: b;
+  width: 100%;
+}
+main #second-section .container-txt .txt-section h1 {
+  color: #01557C;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main #second-section .container-txt .txt-section .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+main #second-section .container-txt .txt-section .content > :first-child {
+  font-weight: bolder;
+  color: #525252;
+}
+main #second-section .container-txt .txt-section .content .sec-list {
+  display: grid;
+  color: rgba(82, 82, 82, 0.8156862745);
+}
+main #second-section .container-txt .txt-section .content .sec-list span {
+  color: #E07B02;
+  font-weight: bolder;
+  margin-bottom: 0.2rem;
+}
+main #third-section .container .section-header > h2 {
+  color: #0171A5;
+}
+main #third-section .container .row {
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+main #third-section .container .row .first-card {
+  background: #F1F5FB;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+main #third-section .container .row .first-card h2 {
+  justify-content: space-between;
+}
+main #third-section .container .row .first-card h2 > :first-child {
+  position: relative;
+}
+main #third-section .container .row .first-card h2 p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+main #third-section .container .row .first-card h2 > :first-child::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 3px;
+  bottom: 0;
+  background-color: #0171A5;
+}
+main #third-section .container .row .first-card h2 small {
+  display: block;
+  font-size: 0.9rem;
+}
+main #third-section .container .row .first-card .btn {
+  background-color: #0171A5;
+  color: white;
+}
+main #third-section .container .row .second-card {
+  background: #E5912C;
+  color: white;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+main #third-section .container .row .second-card h2 {
+  justify-content: space-between;
+}
+main #third-section .container .row .second-card h2 > :first-child {
+  position: relative;
+}
+main #third-section .container .row .second-card h2 p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+main #third-section .container .row .second-card h2 > :first-child::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 3px;
+  bottom: 0;
+  background-color: #ffffff;
+}
+main #third-section .container .row .second-card h2 small {
+  display: block;
+  font-size: 0.9rem;
+}
+main #third-section .container .row .second-card .btn {
+  background-color: white;
+  color: #E5912C;
+}
+main #third-section .container .row .third-card {
+  background: #0171A5;
+  color: white;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+main #third-section .container .row .third-card h2 {
+  justify-content: space-between;
+}
+main #third-section .container .row .third-card h2 > :first-child {
+  position: relative;
+}
+main #third-section .container .row .third-card h2 p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+main #third-section .container .row .third-card h2 > :first-child::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 3px;
+  bottom: 0;
+  background-color: #ffffff;
+}
+main #third-section .container .row .third-card h2 small {
+  display: block;
+  font-size: 0.9rem;
+}
+main #third-section .container .row .third-card .btn {
+  background-color: white;
+  color: #0171A5;
+}
+main #third-section .container .row .first-card:hover, main #third-section .container .row .second-card:hover, main #third-section .container .row .third-card:hover {
+  transform: scale(1.04);
+}
+main .need_more .row .col-md {
+  border-radius: 20px 0 20px 0;
+  transition: 0.3s linear;
+  background: white;
+}
+main .need_more .row .col-md:hover {
+  transform: scale(1.03);
+  border-radius: 0 20px 0 20px;
+}
+
+.accordion-section {
+  background: #FBE6EA;
+}
+.accordion-section .accordion-item .accordion-button, .accordion-section .accordion-collapse {
+  background: #FBE6EA !important;
+}
+
+.image-left {
+  display: flex;
+  align-items: center;
+}
+
+.image-left img {
+  margin-right: 1rem;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+.footer ul li a {
+  color: rgba(0, 0, 0, 0.521);
+  transition: 0.2s linear;
+}
+.footer ul li a:hover {
+  color: #000;
+}
+.footer ul li {
+  transition: 0.2s linear;
+}
+.footer ul li:hover {
+  transform: translateX(3%);
+}
+
+.footer h5 {
+  font-weight: 400;
+}
+
+footer .icon a {
+  color: rgba(0, 0, 0, 0.521);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+footer .icon a:hover {
+  color: #000;
+  scale: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  header .hero .row :first-child {
+    width: 100%;
+  }
+  header .hero .row :first-child h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  header .hero .row :first-child p {
+    text-align: center;
+  }
+  main .need_more .row .col-md h3 {
+    font-size: 1.5rem;
+  }
+  main .need_more .row .col-md p {
+    font-size: 0.8rem;
+  }
+  main #second-section .container-txt {
+    display: grid;
+    grid-template-areas: "b" "a" !important;
+  }
+  main #second-section .container-txt img {
+    width: 100%;
+  }
+  main #second-section .container-txt h1 {
+    font-size: 1.4rem !important;
+  }
+  main .txt-section h1 {
+    font-size: 2.5rem !important;
+  }
+  main .accordion-img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .starter-img {
+    width: 100%;
+  }
+  footer {
+    text-align: center !important;
+  }
+  #third-section .card-body .card-text {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
